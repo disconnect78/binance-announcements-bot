@@ -2,7 +2,7 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
-export namespace AppConfig {
+export  AppConfig {
   export const config = {
     environment: process.env.NODE_ENV || 'development',
     cron: JSON.parse(process.env.ENABLE_CRON) as boolean,
